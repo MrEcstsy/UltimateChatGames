@@ -116,7 +116,6 @@ class Loader extends PluginBase implements Listener
             $max = $this->config->get("settings")["max"] ?? 100000;
             $reward = mt_rand($min, $max);
             $config = $this->msgConfig;
-            //$session = \xtcy\odysseyrealm\Loader::getSessionManager()->getSession($player);
             BedrockEconomyAPI::CLOSURE()->add(
                 $player->getXuid(),
                 $player->getName(),
